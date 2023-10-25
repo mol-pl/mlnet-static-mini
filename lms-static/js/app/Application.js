@@ -8,11 +8,11 @@ Ext.define('Molnet.Application', {
 	extend: 'Ext.app.Application',
 	name: 'Molnet',
 	requires: [
+		'Molnet.view.Viewport',
 	],
 	controllers: [
 		'SessionController',
 		'cataloguing.index.IndexController',
-		'ViewportController',
 	],
 	appFolder: molnetClientRoot + '/js/app',
 	
