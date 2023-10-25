@@ -12,7 +12,6 @@ Ext.define('Molnet.controller.cataloguing.index.IndexController', {
 		'cataloguing.index.IndexPanel',
 		'cataloguing.index.IndexGrid',
 		'cataloguing.index.IndexDocumentGrid',
-		'cataloguing.index.IndexPanelWindow'
 	],
 	init: function() {
 		this.control({
