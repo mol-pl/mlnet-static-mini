@@ -75,7 +75,7 @@ Ext.define('Molnet.Settings', {
 			return;
 		}
 
-		var settingsResponse = this._mockLoad();
+		var settingsResponse = this._mockSettings();
 
 		// debugger;
 		me.props = settingsResponse.data;
@@ -86,7 +86,7 @@ Ext.define('Molnet.Settings', {
 
 		callback(me.props);
 	},
-	_mockLoad: function() {
+	_mockSettings: function() {
 		return {
 			"success": true,
 			"data": {

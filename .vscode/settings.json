@@ -16,4 +16,13 @@
 		"**/node_modules": true, // this excludes all folders named "node_modules"
 	},
 	"cmake.configureOnOpen": false,
+	"spellright.language": [
+		"en",
+		"pl"
+	],
+	"spellright.documentTypes": [
+		"markdown",
+		"latex",
+		"plaintext"
+	],
 }
