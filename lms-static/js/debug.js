@@ -16,6 +16,7 @@ if (!Ext.isChrome && location.hostname == 'localhost') {
 	Ext.Loader.config.disableCaching = true;
 }
 
+/*
 if (Ext.isDebugEnabled()) {
 	// Domyślnie Ext JS robi `throw` w trybie debug. Nie chcemy tego.
 	// Error handling without throwing
@@ -34,3 +35,4 @@ if (Ext.isDebugEnabled()) {
 		return true; // handled
 	};
 }
+*/
