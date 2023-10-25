@@ -2,6 +2,7 @@
 	"recommendations": [
 		"gsppvo.vscode-commandbar",
 		"dbaeumer.vscode-eslint",
-		"hookyqr.beautify"
+		"hookyqr.beautify",
+		"mrcrowl.easy-less"
 	]
 }

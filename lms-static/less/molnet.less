@@ -1,0 +1,271 @@
+#molnet-loading {
+	background: white url('../images/loading.gif') no-repeat center center;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1000;
+}
+.selected-entry .x-form-field {
+	text-decoration: underline;
+}
+
+.searchingButtonRedClass .x-btn-inner {
+	color: red;
+}
+
+// poprawka ukrywania placeholdera w IE9 (czasem nie jest ukrywany przy polach wypełnianych programistycznie)
+:not(.x-form-empty-field)+.x-placeholder-label {
+	display: none;
+}
+
+// keep column header center alignment (even if column contents are right aligned)
+.x-column-header-inner{
+	text-align:center;
+}
+
+// kolumna akcji w gridach
+.x-action-col-icon {
+	margin-left: 8px;
+}
+.x-action-col-icon:first-child {
+	margin-left: 0;
+}
+
+.unconfirmed-reservation-count {
+	color: red;
+}
+// Pozostawienie pustych spacji w gridach
+// RZ#2347 Problem w konwersji BB#5130 hasła przedm.
+/*.x-grid-cell-inner {
+	white-space: pre;
+}*/
+.selected-item .x-grid-cell, .exclusion-finished {
+	background-color: #E8F6DF;
+}
+
+.cell-error {
+	background-color: #ffeaea;
+}
+
+// wiersz grida z wyłączonym zaznaczeniem
+// można ustawiać przez `getRowClass`
+.selection-disabled .x-selmodel-column {
+	visibility: hidden;
+}
+
+// wiersz grida zubytkowany/przeterminowany
+.lost-item .x-grid-cell {
+	background-color: #ffeaea;
+}
+.lost-item.x-grid-row-alt .x-grid-cell {
+	background-color: #fae5e5;
+}
+
+.done-row .x-grid-cell {
+	background-color: #eaffea;
+}
+.x-grid-item-alt .done-row .x-grid-cell {
+	//background-color: #e0ffe0;
+	filter: brightness(0.97);
+}
+
+
+// wyszarzenie wypożyczeń bezterminowych
+.long-term-loan .x-grid-cell {
+	background-color: #f0f0f0;
+}
+
+.x-item-disabled-preview{
+	opacity: 0.7;
+	background: #ccc;
+}
+.reset-pass-link-print{
+	cursor: pointer; 
+}
+.molnet-margin-auto{
+	margin: auto
+}
+
+// dodatkowe wyróżnienie focusu
+.extra-distinction-on-focus.x-field-focus {
+	border: 2px solid yellow;
+}
+.extra-distinction-on-focus {
+	border: 2px solid transparent;
+	height: 24px;
+	box-sizing: border-box;
+}
+
+.hideTreeNode {
+	display: none;
+}
+.showTreeNode {
+	display: block;
+}
+
+.menubutton-large-text .x-menu-item-text {
+	font-size: small;
+}
+
+// Style dla okienka messageBox
+html.theme-classic {
+	.messageBoxLoans {
+		padding: 0 3em;
+		.x-window-body-default {
+			background: inherit;
+			border: 0px white none;
+		}
+		.x-title-text {
+			font-size: 130%;
+		}
+		.x-window-body .x-box-inner {
+			font-size: 110%;
+		}
+		.x-toolbar-footer {
+			padding-bottom: 1em;
+			.x-btn-inner {
+				font-size: 120%;
+			}
+		}
+	}
+}
+
+//
+// Poprawka obramowania pól filtrowania.
+//
+// `x-form-trigger-wrap-default` dla nowszych skórek (np. Crisp).
+//
+.x-column-header .x-form-trigger-wrap-default,
+.x-column-header .x-form-text-wrap-default {
+	border-color: white;
+	border-right-color: transparent;
+	border-top-color: lightgray;
+	border-left-color: transparent;
+}
+.x-column-header .x-form-trigger {
+	border-left-width: 1px;
+}
+.x-column-header .x-form-text-wrap-default.x-form-text-wrap-focus {
+	border-color: #7eadd9;
+	border-right-color: transparent;
+}
+.x-form-trigger {
+	border-right-width: 1px;
+	border-left-width: 0px;
+}
+
+//
+// Outline.
+//
+// Nie chcemy ramki w gridach, bo osbługujemy je wierszami, a nie komórkami.
+.x-grid-item-focused .x-grid-cell-inner:before {
+	border-style: none !important;
+}
+// wciśnięty i tak jest widoczny
+.x-btn-focus.x-btn-pressed .x-btn-wrap {
+	outline: none !important;
+}
+
+// Formatowanie etykiety
+.text-single-line {
+	white-space: nowrap;
+}
+// Przyciski wewnątrz grup w nagłówku strony obok logo
+.topToolbarButtons .x-btn-inner {
+	font-size: 11px;
+	padding: 0px 2px 0px 2px;
+	line-height: 16px;
+}
+// Grupy przycisków nagłówka strony obok logo
+.topToolbarGroupBorder {
+	border-width: 1px;
+}
+.topToolbarGroupNoBorder {
+	border-width: 0px;
+	box-shadow: none;
+	background-color: transparent;
+}
+// Tło wizarda według koloru skórki classic (jasnoniebieski)
+.wizardBackground .x-border-layout-ct {
+	background-color: #dfe8f6 !important;
+}
+
+// wyszukiwanie w BN/Z39.50
+.empty-text-container {
+	font-weight: bold;
+	font-size: 1.17em;
+	.empty-text-info {
+		margin: 1.5em;
+		padding: 0;
+	}
+}
+
+// poprawka rozciągania pól z długą etykietą w Chrome
+.x-form-item-body {
+	height: initial;
+}
+// zmiana spowrotem w Foksie (ma znaczenie do rozciągania pola textarea - np. po zmianie rozmiaru okna z nieznanym błędem)
+.x-gecko .x-form-item-body {
+	height: 100%;
+}
+
+// wyszarzenie dla pól tekstowych (`textfield`) z wyłączoną edycją (`editable: false`)
+// nie da się wprost przez `readonly`, bo combobox też może mieć pole readonly
+.non-editable-text input {
+	background: #eee;
+}
+
+.warn-input input {
+	outline: 2px solid gold;
+	outline-offset: -2px;
+}
+.ok-input input {
+	outline: 1px solid limegreen;
+	outline-offset: -1px;
+}
+
+.field-trigger {
+	border-width: 1px 1px 1px 0px;
+	&.blue-pause {
+		background: url('../images/control_pause_blue.png') !important;
+	}
+	&.bullet-go {
+		background: url('../images/bullet_go.png') !important;
+	}
+}
+
+.label-width-auto {
+	width: auto !important;
+	.x-form-item-label-inner {
+		width: auto !important;
+	}
+}
+
+.diagnose-badge {
+	top: 1px;
+	right: 1px;
+	position: absolute;
+	font-size: 0.5em;
+	color: tomato;
+}
+
+.fieldset-checkbox {
+	.x-form-checkbox {
+		position: absolute;
+		margin-top: 1px;
+	}
+	label.x-form-cb-label {
+		font: normal 11px/14px tahoma, arial, verdana, sans-serif;
+		color: #15428b;
+		margin: 0;
+	}
+}
+
+// EXTJS-18529
+// https://www.sencha.com/forum/showthread.php?302961
+.x-btn-disabled, .x-item-disabled {
+	cursor: not-allowed;
+	pointer-events: all;
+}
