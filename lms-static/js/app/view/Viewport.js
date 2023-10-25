@@ -2,7 +2,6 @@
 Ext.define('Molnet.view.Viewport', {
 	extend: 'Ext.container.Viewport',
 	requires: [
-		'Molnet.view.BrowserNavigationHandler',
 		'Molnet.view.viewport.CataloguingCard',
 	],
 	title: 'I18n.ApplicationTitle',

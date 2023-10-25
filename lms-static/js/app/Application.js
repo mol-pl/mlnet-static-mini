@@ -127,7 +127,6 @@ Ext.define('Molnet.Application', {
 	 */
 	showViewport: function() {
 		Ext.create('Molnet.view.Viewport');
-		Molnet.view.BrowserNavigationHandler.startReloadTracking();
 	},
 	/**
 	 * Ukrywa animację ładowania (splash).
