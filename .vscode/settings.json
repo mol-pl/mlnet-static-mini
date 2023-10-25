@@ -1,0 +1,19 @@
+{
+	"files.encoding": "utf8",
+	"editor.insertSpaces": false,
+	"editor.detectIndentation": false,
+	"search.exclude": {
+		"**/js-min/": true,
+		"**/main/min/": true,
+		"**/fontawesomewebfonts/": true,
+		"**/css/fontawesome/": true,
+	},
+	"files.exclude": {
+		"**/.git": true, // this is a default value
+		"**/.DS_Store": true, // this is a default value
+		"**/.svn": true,
+
+		"**/node_modules": true, // this excludes all folders named "node_modules"
+	},
+	"cmake.configureOnOpen": false,
+}
